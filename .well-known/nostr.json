@@ -1,9 +1,9 @@
 {
   "names": {
-    "spookydub": "npub14lywnaa9azaaq50gtpzfxlptkqvmxdepamdgf2k0xnrhwp36nw6qsa7sqv"
+    "spookydub": "afc8e9f7a5e8bbd051e85844937c2bb019b33721eeda84aacf34c777063a9bb4"
   },
   "relays": {
-    "npub14lywnaa9azaaq50gtpzfxlptkqvmxdepamdgf2k0xnrhwp36nw6qsa7sqv": [
+    "afc8e9f7a5e8bbd051e85844937c2bb019b33721eeda84aacf34c777063a9bb4": [
         "wss://nostr-pub.wellorder.net"
         ,"wss://nostr-relay.wlvs.space"
         ,"wss://nostr.bitcoiner.social"
