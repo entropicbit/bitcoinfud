@@ -25,5 +25,3 @@ async function load() {
 	
 	document.getElementById('list').innerHTML = output;
 }
-
-load();
