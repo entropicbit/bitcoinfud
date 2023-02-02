@@ -7,16 +7,23 @@
 			box-sizing: border-box;
 			font-size: 1.15em;
 			font-family: Arial, sans-serif;
+			word-break: break-all;
 		}
 		html {
 			max-width: 70ch;
 			padding: 3em 1em;
 			margin: auto;
-			line-height: 1.25;
+			line-height: 0.75;
 		}
 		body {
 			padding: 1em;
 			flex-direction: row;
+		}
+		.name {
+			font-size: 0.8em;
+		}
+		.key {
+			font-size: 0.5em;
 		}
 		@media (max-width: 615px){
 			body {
@@ -24,14 +31,17 @@
 			}
 		}
 	</style>
-	<title></title>
+	<script src="js/load.js"></script>
+	<title>Haus Nostr</title>
 </head>
 <body>
-	<h1>Fellow Pleb</h1>
+	<h1>Plebs of Haus Nostr</h1>
 	<div class="row">
-		<h2>Nostr Pubkey</h2>
-		spookydub@nostr.haus<br/>
-		"afc8e9f7a5e8bbd051e85844937c2bb019b33721eeda84aacf34c777063a9bb4"
+		<h2>Nostr Pubkeys</h2>
+		<div id="list">
+			<span class="name">spookydub@nostr.haus</span><br/>
+			<span class="key">afc8e9f7a5e8bbd051e85844937c2bb019b33721eeda84aacf34c777063a9bb4</span>
+		</div>	
 	</div>
 </body>
 </html>
