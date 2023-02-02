@@ -6,18 +6,50 @@
 		* {
 			box-sizing: border-box;
 			font-size: 1.15em;
-			font-family: Arial, sans-serif;
-			word-break: break-all;
+			font-family: Consolas, monaco, monospace; 
 		}
 		html {
+			background: lightgray;
 			max-width: 70ch;
-			padding: 3em 1em;
+			padding: 1em 1em;
 			margin: auto;
-			line-height: 0.75;
+			
 		}
 		body {
 			padding: 1em;
 			flex-direction: row;
+		}
+		header{
+			background: steelblue;
+			padding: 1.2em 1em;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			border-radius: 0.2em 0.2em 0 0;
+			color: ghostwhite;
+			
+		}
+		footer{
+			margin: 0.5em;
+			font-size: 0.5em;
+			text-align: center;
+		}
+		.button{
+			color: ghostwhite;
+		}
+		.button:hover {
+			filter: saturate(100);
+		}
+		#list{
+			padding: 0.5em 0 0.5em 0;
+			background: whitesmoke;
+			border-radius: 0 0 0.2em 0.2em;
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+		}
+		.row {
+			color: grey;
+			margin: 0 1em 1em 1em;
+			word-break: break-all;
 		}
 		.name {
 			font-size: 0.8em;
@@ -32,16 +64,26 @@
 		}
 	</style>
 	<script src="js/load.js"></script>
+	<script src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous'></script>
+	<link rel="icon" type="image/x-icon" href="./favicon.svg">
 	<title>Haus Nostr</title>
 </head>
 <body>
-	<h1>Plebs of Haus Nostr</h1>
-	<div class="row">
-		<h2>Nostr Pubkeys</h2>
-		<div id="list">
+	<header>
+		<span>Plebs of Haus Nostr</span>
+
+		<a href="https://github.com/entropicbit/entropicbit.github.io/blob/main/.well-known/nostr.json" class="button">
+			<i class="fa-solid fa-square-plus"></i>
+		</a>
+	</header>
+	<div id="list">
+		<div class="row">
 			<span class="name">spookydub@nostr.haus</span><br/>
 			<span class="key">afc8e9f7a5e8bbd051e85844937c2bb019b33721eeda84aacf34c777063a9bb4</span>
 		</div>	
 	</div>
+	<footer>
+		<a href="lightning:spookydub@nostr.haus">pls ❤ me</a>
+	</footer>
 </body>
 </html>

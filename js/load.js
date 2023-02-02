@@ -11,14 +11,15 @@ async function load() {
 		console.log('Couldn\'t load list: ' + err);
 	}
 
-	let output;
-	let names = Object.keys(plebs);
-	let keys = Object.values(plebs);
+	let output = "";
+	for (const name in plebs) {
+		let key = plebs[name];
 
-	names.forEach((name) => {
+		output += "<div class=\"row\">";
 		output += "<span class=\"name\">" + name + "@nostr.haus</span><br />";
-		output += "<span class=\"key\">" + keys[name][0] + "</span>";
-	});
+		output += "<span class=\"key\">" + key + "</span>";
+		output += "</div>";
+	}
 
 	console.log(output);
 	
