@@ -3,7 +3,7 @@
   "tag":"payRequest",
   "commentAllowed":255,
   "callback":"https://getalby.com/lnurlp/spookydub/callback",
-  "metadata":"[[\"text/identifier\", \"spookydub@getalby.com\"], [\"text/plain\", \"Sats for Jasko\"]]",
+  "metadata":"[[\"text/identifier\", \"spookydub@getalby.com\"], [\"text/plain\", \"Sats for spookydub\"]]",
   "minSendable":1000,"maxSendable":11000000000,
   "payerData":
     {
