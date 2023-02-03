@@ -15,10 +15,13 @@ async function load() {
 	for (const name in plebs) {
 		let key = plebs[name];
 
-		output += "<div class=\"row\">";
-		output += "<span class=\"name\">" + name + "@nostr.haus</span><br />";
-		output += "<span class=\"key\">" + key + "</span>";
-		output += "</div>";
+		output +=
+			`
+			<div class="row">
+			<span class="name"> ${name}@nostr.haus</span><br />
+			<span class=\"key\"> ${key} </span>
+			</div>
+			`
 	}
 
 	console.log(output);
