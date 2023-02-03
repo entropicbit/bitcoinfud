@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="js/bech32-buffer.min.js"></script>
 	<script src="js/load.js"></script>
 	<meta charset="UTF-8">
 	<style>
@@ -42,15 +43,18 @@
 			filter: saturate(100);
 		}
 		#list{
-			padding: 0.5em 0 0.5em 0;
 			background: whitesmoke;
 			border-radius: 0 0 0.2em 0.2em;
 			box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 		}
 		.row {
 			color: grey;
-			margin: 0 1em 1em 1em;
+			padding: 1em;
 			word-break: break-all;
+		}
+		.row:hover {
+			cursor: pointer;
+			background: lightgoldenrodyellow;
 		}
 		.name {
 			font-size: 0.8em;
@@ -83,7 +87,7 @@
 		</div>	
 	</div>
 	<footer>
-		<a href="lightning:spookydub@nostr.haus">pls ❤ me</a>
+		<a href="lightning:jasko@nostr.haus">pls ❤ me</a>
 	</footer>
 	<script type="text/javascript">load();</script>
 </body>
