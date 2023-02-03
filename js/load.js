@@ -24,7 +24,7 @@ async function load() {
 			`
 	}
 
-	console.log(output);
+	//console.log(output);
 	
 	document.getElementById('list').innerHTML = output;
 }
